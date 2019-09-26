@@ -93,12 +93,12 @@ class _SearchPageState extends State<SearchPage> {
                 leftPadding: size.getWidthPx(16),
                 textColor: textPrimaryColor,
                 fontSize: 16.0),
-            HorizontalList(
-              children: <Widget>[
-                for (int i = 0; i < premiumList.length; i++)
-                  propertyCard(premiumList[i])
-              ],
-            ),
+            // HorizontalList(
+            //   children: <Widget>[
+            //     for (int i = 0; i < premiumList.length; i++)
+            //       propertyCard(premiumList[i])
+            //   ],
+            // ),
             leftAlignText(
                 text: "Featured properties",
                 leftPadding: size.getWidthPx(16),

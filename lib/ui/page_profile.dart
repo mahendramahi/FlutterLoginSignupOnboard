@@ -27,12 +27,15 @@ class _ProfilePageState extends State<ProfilePage> {
         systemNavigationBarIconBrightness: Brightness.dark,
         systemNavigationBarColor: backgroundColor),
         child: Container(
-          child: SingleChildScrollView(
-            physics: ClampingScrollPhysics(),
-            child: Column(
+          child: Column(
               children: <Widget>[upperPart()],
             ),
-          ),
+          // child: SingleChildScrollView(
+          //   physics: ClampingScrollPhysics(),
+          //   child: Column(
+          //     children: <Widget>[upperPart()],
+          //   ),
+          // ),
         ),
       ),
     );
@@ -131,7 +134,7 @@ class _ProfilePageState extends State<ProfilePage> {
             maxRadius: size.getWidthPx(48),
             foregroundColor: colorCurve,
             backgroundImage: NetworkImage(
-                'https://avatars3.githubusercontent.com/u/17440971?s=400&u=b0d8df93a2e45812e577358cd66849e9d7cf0f90&v=4'),
+                'https://avatars0.githubusercontent.com/u/9445572?s=400&v=4'),
           ),
         ),
       ),
@@ -161,7 +164,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Column nameWidget() {
     return Column(
       children: <Widget>[
-        Text("Harsh Bhavsar",
+        Text("Mahendra",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 16.0,

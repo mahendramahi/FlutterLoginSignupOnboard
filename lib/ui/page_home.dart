@@ -53,7 +53,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         break;
       case 1:
         //Search Page
-        tabView = [PageComingSoon()];
+       // tabView = [PageComingSoon()];
+       tabView = [ProfilePage()];
         break;
       case 2:
         //Profile Page

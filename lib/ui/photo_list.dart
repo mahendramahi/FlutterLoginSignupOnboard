@@ -30,7 +30,8 @@ class _PhotosListState extends State<PhotosList> implements ApiListener {
   Padding staggeredBody() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal:size.getWidthPx(8)),
-      child: StaggeredGridView.countBuilder(
+      child: SingleChildScrollView(
+        child: StaggeredGridView.countBuilder(
         crossAxisCount: 3,
         physics: BouncingScrollPhysics(),
         shrinkWrap: true,
@@ -49,6 +50,7 @@ class _PhotosListState extends State<PhotosList> implements ApiListener {
         staggeredTileBuilder: (int index) => StaggeredTile.count(1, index.isEven ? 1.5 : 1),
         mainAxisSpacing: size.getWidthPx(4),
         crossAxisSpacing: size.getWidthPx(4),
+      ),
       ),
     );
   }
